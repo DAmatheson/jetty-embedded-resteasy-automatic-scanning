@@ -1,8 +1,6 @@
 This example demonstrates automatic scanning of JAX-RS resources with embedded Jetty and RESTEasy.
 
-The key to enabling this is the 
-    `<Call class="org.eclipse.jetty.webapp.Configuration$ClassList" name="setServerDefault">`
-section of `webserver/src/main/resources/server_config.xml` and the appropriate dependency libraries.
+The key to enabling this is the first `<Call>` element of [`webserver/src/main/resources/server_config.xml`](webserver/src/main/resources/server_config.xml) and the appropriate dependency libraries.
 
 # Build
 `mvn clean package`
